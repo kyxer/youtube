@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "youtube/VideoCell.swift"
+            timestampString = "490759065.282429"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "35"
+            endingLineNumber = "35"
+            landmarkName = "VideoCell"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "youtube.VideoCell.video.didset : Swift.Optional&lt;youtube.Video&gt;"
+                  moduleName = "youtube"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/german/Documents/Projects/iOS/youtube/youtube/youtube/VideoCell.swift"
+                  timestampString = "490758128.845017"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "35"
+                  endingLineNumber = "35"
+                  offsetFromSymbolStart = "548">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "youtube.VideoCell.video.didset : Swift.Optional&lt;youtube.Video&gt;"
+                  moduleName = "youtube"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/german/Documents/Projects/iOS/youtube/youtube/youtube/VideoCell.swift"
+                  timestampString = "490758128.845552"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "35"
+                  endingLineNumber = "35"
+                  offsetFromSymbolStart = "988">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

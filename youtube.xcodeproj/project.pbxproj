@@ -8,20 +8,34 @@
 
 /* Begin PBXBuildFile section */
 		DE0049851D3FCA640077F027 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0049841D3FCA640077F027 /* AppDelegate.swift */; };
-		DE0049871D3FCA640077F027 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0049861D3FCA640077F027 /* ViewController.swift */; };
+		DE0049871D3FCA640077F027 /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0049861D3FCA640077F027 /* HomeController.swift */; };
 		DE00498A1D3FCA640077F027 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE0049881D3FCA640077F027 /* Main.storyboard */; };
 		DE00498C1D3FCA640077F027 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE00498B1D3FCA640077F027 /* Assets.xcassets */; };
 		DE00498F1D3FCA640077F027 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE00498D1D3FCA640077F027 /* LaunchScreen.storyboard */; };
+		DE0049981D3FF1670077F027 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0049971D3FF1670077F027 /* Extensions.swift */; };
+		DE00499B1D3FF2340077F027 /* VideoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE00499A1D3FF2340077F027 /* VideoCell.swift */; };
+		DE00499E1D3FF3EC0077F027 /* MenuBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE00499D1D3FF3EC0077F027 /* MenuBar.swift */; };
+		DE0049A01D400FE10077F027 /* Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE00499F1D400FE10077F027 /* Video.swift */; };
+		DE03D7D21D406CCF002A3261 /* SettingsLauncher.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE03D7D11D406CCF002A3261 /* SettingsLauncher.swift */; };
+		DE03D7D41D407306002A3261 /* SettingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE03D7D31D407306002A3261 /* SettingCell.swift */; };
+		DE03D7D71D409E63002A3261 /* ApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE03D7D61D409E63002A3261 /* ApiService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		DE0049811D3FCA640077F027 /* youtube.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = youtube.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE0049841D3FCA640077F027 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		DE0049861D3FCA640077F027 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DE0049861D3FCA640077F027 /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
 		DE0049891D3FCA640077F027 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DE00498B1D3FCA640077F027 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DE00498E1D3FCA640077F027 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DE0049901D3FCA640077F027 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DE0049971D3FF1670077F027 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		DE00499A1D3FF2340077F027 /* VideoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoCell.swift; sourceTree = "<group>"; };
+		DE00499D1D3FF3EC0077F027 /* MenuBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuBar.swift; sourceTree = "<group>"; };
+		DE00499F1D400FE10077F027 /* Video.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Video.swift; sourceTree = "<group>"; };
+		DE03D7D11D406CCF002A3261 /* SettingsLauncher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsLauncher.swift; sourceTree = "<group>"; };
+		DE03D7D31D407306002A3261 /* SettingCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingCell.swift; sourceTree = "<group>"; };
+		DE03D7D61D409E63002A3261 /* ApiService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +68,61 @@
 		DE0049831D3FCA640077F027 /* youtube */ = {
 			isa = PBXGroup;
 			children = (
+				DE03D7D51D409E25002A3261 /* ApiServices */,
+				DE0049A11D400FE60077F027 /* Model */,
+				DE00499C1D3FF2690077F027 /* Controller */,
+				DE0049991D3FF1940077F027 /* View */,
+				DE0049961D3FEB320077F027 /* Helpers */,
 				DE0049841D3FCA640077F027 /* AppDelegate.swift */,
-				DE0049861D3FCA640077F027 /* ViewController.swift */,
 				DE0049881D3FCA640077F027 /* Main.storyboard */,
 				DE00498B1D3FCA640077F027 /* Assets.xcassets */,
 				DE00498D1D3FCA640077F027 /* LaunchScreen.storyboard */,
 				DE0049901D3FCA640077F027 /* Info.plist */,
 			);
 			path = youtube;
+			sourceTree = "<group>";
+		};
+		DE0049961D3FEB320077F027 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				DE0049971D3FF1670077F027 /* Extensions.swift */,
+			);
+			name = Helpers;
+			sourceTree = "<group>";
+		};
+		DE0049991D3FF1940077F027 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DE00499A1D3FF2340077F027 /* VideoCell.swift */,
+				DE00499D1D3FF3EC0077F027 /* MenuBar.swift */,
+				DE03D7D31D407306002A3261 /* SettingCell.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		DE00499C1D3FF2690077F027 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				DE0049861D3FCA640077F027 /* HomeController.swift */,
+				DE03D7D11D406CCF002A3261 /* SettingsLauncher.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		DE0049A11D400FE60077F027 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DE00499F1D400FE10077F027 /* Video.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		DE03D7D51D409E25002A3261 /* ApiServices */ = {
+			isa = PBXGroup;
+			children = (
+				DE03D7D61D409E63002A3261 /* ApiService.swift */,
+			);
+			name = ApiServices;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -96,6 +157,7 @@
 				TargetAttributes = {
 					DE0049801D3FCA640077F027 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 825463F4YK;
 					};
 				};
 			};
@@ -135,8 +197,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DE0049871D3FCA640077F027 /* ViewController.swift in Sources */,
+				DE0049871D3FCA640077F027 /* HomeController.swift in Sources */,
+				DE0049A01D400FE10077F027 /* Video.swift in Sources */,
+				DE03D7D41D407306002A3261 /* SettingCell.swift in Sources */,
+				DE00499B1D3FF2340077F027 /* VideoCell.swift in Sources */,
+				DE03D7D21D406CCF002A3261 /* SettingsLauncher.swift in Sources */,
+				DE03D7D71D409E63002A3261 /* ApiService.swift in Sources */,
+				DE0049981D3FF1670077F027 /* Extensions.swift in Sources */,
 				DE0049851D3FCA640077F027 /* AppDelegate.swift in Sources */,
+				DE00499E1D3FF3EC0077F027 /* MenuBar.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -249,6 +318,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = youtube/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = app.com.youtube;
@@ -260,6 +330,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = youtube/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = app.com.youtube;
@@ -286,6 +357,7 @@
 				DE0049951D3FCA640077F027 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
