@@ -11,6 +11,9 @@ import UIKit
 class HomeController: UICollectionViewController, UICollectionViewDelegateFlowLayout {
     
     let cellId = "cellId"
+    let trendingCellId = "trendingCellId"
+    let subscriptionCellId = "subscriptionCellId"
+    
     let titles = ["Home", "Trending", "Subscritions", "Account"]
     
     lazy var menuBar:MenuBar = {
@@ -53,8 +56,9 @@ class HomeController: UICollectionViewController, UICollectionViewDelegateFlowLa
         }
         
         collectionView?.backgroundColor = UIColor.whiteColor()
-        //collectionView?.registerClass(VideoCell.self, forCellWithReuseIdentifier: "cellId")
         collectionView?.registerClass(FeedCell.self, forCellWithReuseIdentifier: cellId)
+        collectionView?.registerClass(TrendingCell.self, forCellWithReuseIdentifier: trendingCellId)
+        collectionView?.registerClass(SubscriptionCell.self, forCellWithReuseIdentifier: subscriptionCellId)
         collectionView?.contentInset = UIEdgeInsetsMake(50, 0, 0, 0)
         collectionView?.scrollIndicatorInsets = UIEdgeInsetsMake(50, 0, 0, 0)
         
@@ -144,11 +148,17 @@ class HomeController: UICollectionViewController, UICollectionViewDelegateFlowLa
     
     override func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
         
-        let cell = collectionView.dequeueReusableCellWithReuseIdentifier(cellId, forIndexPath: indexPath)
+        let identifier:String
         
-        let colors:[UIColor] = [.blueColor(),.greenColor(), .grayColor(), .purpleColor()]
+        if indexPath.item == 1 {
+            identifier = trendingCellId
+        } else if indexPath.item == 2 {
+            identifier = subscriptionCellId
+        } else {
+            identifier = cellId
+        }
         
-        cell.backgroundColor = colors[indexPath.item]
+        let cell = collectionView.dequeueReusableCellWithReuseIdentifier(identifier, forIndexPath: indexPath)
         return cell
     }
     
